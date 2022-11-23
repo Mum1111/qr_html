@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   const [url, setUrl] = useState("");
-  const [size, setSize] = useState(512);
+  const [size, setSize] = useState(1024);
   const [innerImgSize, setInnerImgSize] = useState(140);
   const [value, setValue] = useState(1);
   const [messageApi, contextHolder] = message.useMessage();
@@ -94,10 +94,10 @@ function App() {
           />
         </p>
         <div className="button_group">
-          <div className="App-link" onClick={() => changeCanvasToPic(512)}>
+          <div className="App-link" onClick={() => changeCanvasToPic(1024)}>
             生成二维码(1024)
           </div>
-          <div className="App-link" onClick={() => changeCanvasToPic(1024)}>
+          <div className="App-link" onClick={() => changeCanvasToPic(2048)}>
             生成二维码(2048)
           </div>
         </div>
